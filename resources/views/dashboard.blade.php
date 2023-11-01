@@ -11,7 +11,7 @@
                                     <i class="fas fa-dollar-sign"></i>
                                 </span>
                                 <div class="dash-count">
-                                    <div class="dash-title">Amount Due</div>
+                                    <div class="dash-title"> Total Amount </div>
                                     <div class="dash-counts">
                                         <p>1,642</p>
                                     </div>
@@ -21,10 +21,10 @@
                                 <div class="progress-bar bg-5" role="progressbar" style="width: 75%" aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p class="text-muted mt-3 mb-0">
+                            {{-- <p class="text-muted mt-3 mb-0">
                                 <span class="text-danger me-1"><i class="fas fa-arrow-down me-1"></i>1.15%</span>
                                 since last week
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                                 <div class="dash-count">
                                     <div class="dash-title">Customers</div>
                                     <div class="dash-counts">
-                                        <p>3,642</p>
+                                        <p>100</p>
                                     </div>
                                 </div>
                             </div>
@@ -46,10 +46,10 @@
                                 <div class="progress-bar bg-6" role="progressbar" style="width: 65%" aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p class="text-muted mt-3 mb-0">
+                            {{-- <p class="text-muted mt-3 mb-0">
                                 <span class="text-success me-1"><i class="fas fa-arrow-up me-1"></i>2.37%</span>
                                 since last week
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                                     <i class="fas fa-file-alt"></i>
                                 </span>
                                 <div class="dash-count">
-                                    <div class="dash-title">Invoices</div>
+                                    <div class="dash-title">Users</div>
                                     <div class="dash-counts">
                                         <p>1,041</p>
                                     </div>
@@ -71,10 +71,10 @@
                                 <div class="progress-bar bg-7" role="progressbar" style="width: 85%" aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p class="text-muted mt-3 mb-0">
+                            {{-- <p class="text-muted mt-3 mb-0">
                                 <span class="text-success me-1"><i class="fas fa-arrow-up me-1"></i>3.77%</span>
                                 since last week
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
@@ -96,10 +96,10 @@
                                 <div class="progress-bar bg-8" role="progressbar" style="width: 45%" aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p class="text-muted mt-3 mb-0">
+                            {{-- <p class="text-muted mt-3 mb-0">
                                 <span class="text-danger me-1"><i class="fas fa-arrow-down me-1"></i>8.68%</span>
                                 since last week
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
@@ -134,19 +134,19 @@
                                 <div class="w-md-100 d-flex align-items-center mb-3 flex-wrap flex-md-nowrap">
                                     <div>
                                         <span>Total Sales</span>
-                                        <p class="h3 text-primary me-5">$1000</p>
+                                        <p class="h3 text-primary me-5">&#8377;1000</p>
                                     </div>
                                     <div>
                                         <span>Receipts</span>
-                                        <p class="h3 text-success me-5">$1000</p>
+                                        <p class="h3 text-success me-5">&#8377;1000</p>
                                     </div>
                                     <div>
                                         <span>Expenses</span>
-                                        <p class="h3 text-danger me-5">$300</p>
+                                        <p class="h3 text-danger me-5">&#8377;300</p>
                                     </div>
                                     <div>
                                         <span>Earnings</span>
-                                        <p class="h3 text-dark me-5">$700</p>
+                                        <p class="h3 text-dark me-5">&#8377;700</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
                     <div class="card flex-fill">
                         <div class="card-header">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Invoice Analytics</h5>
+                                <h5 class="card-title">Portfolio Management</h5>
                                 <div class="dropdown main">
                                     <button class="btn btn-white btn-sm dropdown-toggle" type="button"
                                         id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -186,18 +186,18 @@
                                         <div class="mt-4">
                                             <p class="mb-2 text-truncate">
                                                 <i class="fas fa-circle text-primary me-1"></i>
-                                                Invoiced
+                                                Total Files
                                             </p>
-                                            <h5>$2,132</h5>
+                                            <h5>2,132</h5>
                                         </div>
                                     </div>
                                     <div class="col-4">
                                         <div class="mt-4">
                                             <p class="mb-2 text-truncate">
                                                 <i class="fas fa-circle text-success me-1"></i>
-                                                Received
+                                                Approved
                                             </p>
-                                            <h5>$1,763</h5>
+                                            <h5>1,763</h5>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -206,7 +206,7 @@
                                                 <i class="fas fa-circle text-danger me-1"></i>
                                                 Pending
                                             </p>
-                                            <h5>$973</h5>
+                                            <h5>973</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -221,10 +221,10 @@
                         <div class="card-header">
                             <div class="row align-center">
                                 <div class="col">
-                                    <h5 class="card-title">Recent Invoices</h5>
+                                    <h5 class="card-title">Recent Add Customers</h5>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="invoices.html" class="btn-right btn btn-sm btn-outline-primary">
+                                    <a href="#" class="btn-right btn btn-sm btn-outline-primary">
                                         View All
                                     </a>
                                 </div>
@@ -272,13 +272,13 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-04.jpg"
                                                             alt="User Image" />Barbara Moore</a>
                                                 </h2>
                                             </td>
-                                            <td>$118</td>
+                                            <td>&#8377;118</td>
                                             <td>23 Nov 2020</td>
                                             <td>
                                                 <span class="badge bg-success-light">Paid</span>
@@ -311,13 +311,13 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-06.jpg"
                                                             alt="User Image" />Karlene Chaidez</a>
                                                 </h2>
                                             </td>
-                                            <td>$222</td>
+                                            <td>&#8377;222</td>
                                             <td>18 Nov 2020</td>
                                             <td>
                                                 <span class="badge bg-info-light text-info">Sent</span>
@@ -350,17 +350,16 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-08.jpg"
                                                             alt="User Image" />Russell Copeland</a>
                                                 </h2>
                                             </td>
-                                            <td>$347</td>
+                                            <td>&#8377;347</td>
                                             <td>10 Nov 2020</td>
                                             <td>
-                                                <span class="badge bg-warning-light text-warning">Partially
-                                                    Paid</span>
+                                                <span class="badge bg-warning-light text-warning">Partially Paid</span>
                                             </td>
                                             <td class="text-right">
                                                 <div class="dropdown dropdown-action">
@@ -390,13 +389,13 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-10.jpg"
                                                             alt="User Image" />Joseph Collins</a>
                                                 </h2>
                                             </td>
-                                            <td>$826</td>
+                                            <td>&#8377;826</td>
                                             <td>25 Sep 2020</td>
                                             <td>
                                                 <span class="badge bg-danger-light">Overdue</span>
@@ -429,13 +428,13 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-11.jpg"
                                                             alt="User Image" />Jennifer Floyd</a>
                                                 </h2>
                                             </td>
-                                            <td>$519</td>
+                                            <td>&#8377;519</td>
                                             <td>18 Sep 2020</td>
                                             <td>
                                                 <span class="badge bg-success-light">Paid</span>
@@ -476,10 +475,10 @@
                         <div class="card-header">
                             <div class="row align-center">
                                 <div class="col">
-                                    <h5 class="card-title">Recent Estimates</h5>
+                                    <h5 class="card-title">Users</h5>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="invoice-details.html" class="btn-right btn btn-sm btn-outline-primary">
+                                    <a href="#" class="btn-right btn btn-sm btn-outline-primary">
                                         View All
                                     </a>
                                 </div>
@@ -522,14 +521,14 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-05.jpg" alt="User Image" />
                                                         Greg Lynch</a>
                                                 </h2>
                                             </td>
                                             <td>5 Nov 2020</td>
-                                            <td>$175</td>
+                                            <td>&#8377;175</td>
                                             <td>
                                                 <span class="badge bg-info-light text-info">Sent</span>
                                             </td>
@@ -567,14 +566,14 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-06.jpg" alt="User Image" />
                                                         Karlene Chaidez</a>
                                                 </h2>
                                             </td>
                                             <td>28 Oct 2020</td>
-                                            <td>$1500</td>
+                                            <td>&#8377;1500</td>
                                             <td>
                                                 <span class="badge bg-warning-light text-warning">Expired</span>
                                             </td>
@@ -612,14 +611,14 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-07.jpg" alt="User Image" />
                                                         John Blair</a>
                                                 </h2>
                                             </td>
                                             <td>17 Oct 2020</td>
-                                            <td>$2350</td>
+                                            <td>&#8377;2350</td>
                                             <td>
                                                 <span class="badge bg-success-light">Accepted</span>
                                             </td>
@@ -657,14 +656,14 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-08.jpg" alt="User Image" />
                                                         Russell Copeland</a>
                                                 </h2>
                                             </td>
                                             <td>8 Oct 2020</td>
-                                            <td>$1890</td>
+                                            <td>&#8377;1890</td>
                                             <td>
                                                 <span class="badge bg-success-light">Accepted</span>
                                             </td>
@@ -702,14 +701,14 @@
                                         <tr>
                                             <td>
                                                 <h2 class="table-avatar">
-                                                    <a href="profile.html"><img
+                                                    <a href=""><img
                                                             class="avatar avatar-sm me-2 avatar-img rounded-circle"
                                                             src="assets/img/profiles/avatar-09.jpg" alt="User Image" />
                                                         Leatha Bailey</a>
                                                 </h2>
                                             </td>
                                             <td>30 Sep 2020</td>
-                                            <td>$785</td>
+                                            <td>&#8377;785</td>
                                             <td>
                                                 <span class="badge bg-success-light">Accepted</span>
                                             </td>

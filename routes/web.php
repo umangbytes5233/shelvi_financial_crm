@@ -27,3 +27,5 @@ Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard'
 // User routes
 Route::get('user-form', [UserController::class, 'userForm'])->name('user-form');
 Route::get('user-list', [UserController::class, 'userList'])->name('user-list');
+Route::get('user-register', [UserController::class, 'userRegisterForm'])->name('user-register');
+Route::post('register', [UserController::class, 'userRegistration'])->name('register');

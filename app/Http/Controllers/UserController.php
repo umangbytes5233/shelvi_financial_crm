@@ -17,4 +17,16 @@ class UserController extends Controller
     {
         return view('user-list');
     }
+
+    // Registration form
+    public function userRegisterForm()
+    {
+        return view('user-register');
+    }
+
+    // Register user
+    public function userRegistration(Request $request)
+    {
+        return "done";
+    }
 }
