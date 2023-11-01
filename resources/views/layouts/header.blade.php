@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-    <title>Dashboard</title>
+    <title>Shelvi Financial Services</title>
 
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" />
 
@@ -36,10 +36,10 @@
 
             <div class="top-nav-search">
                 <form>
-                    <input type="text" class="form-control" placeholder="Search here" />
-                    <button class="btn" type="submit">
+                    {{-- <input type="text" class="form-control" placeholder="Search here" /> --}}
+                    {{-- <button class="btn" type="submit">
                         <img src="{{ asset('assets/img/icons/search.svg') }}" alt="img" />
-                    </button>
+                    </button> --}}
                 </form>
             </div>
 
@@ -48,7 +48,7 @@
             </a>
 
             <ul class="nav nav-tabs user-menu">
-                <li class="nav-item dropdown has-arrow flag-nav">
+                {{-- <li class="nav-item dropdown has-arrow flag-nav">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
                         <img src="{{ asset('assets/img/flags/us1.png') }}" alt height="20" /><span>English</span>
                     </a>
@@ -66,7 +66,7 @@
                             <img src="{{ asset('assets/img/flags/de.png') }}" alt height="16" /><span>German</span>
                         </a>
                     </div>
-                </li>
+                </li> --}}
 
                 <li class="nav-item has-arrow dropdown-heads">
                     <a href="javascript:void(0);" class="toggle-switch">
@@ -86,7 +86,7 @@
                         <div class="noti-content">
                             <ul class="notification-list">
                                 <li class="notification-message">
-                                    <a href="profile.html">
+                                    <a href="#">
                                         <div class="media d-flex">
                                             <span class="avatar avatar-sm">
                                                 <img class="avatar-img rounded-circle" alt
@@ -125,7 +125,7 @@
                                     </a>
                                 </li>
                                 <li class="notification-message">
-                                    <a href="profile.html">
+                                    <a href="#">
                                         <div class="media d-flex">
                                             <div class="avatar avatar-sm">
                                                 <span class="avatar-title rounded-circle bg-primary-light"><i
@@ -143,7 +143,7 @@
                                     </a>
                                 </li>
                                 <li class="notification-message">
-                                    <a href="profile.html">
+                                    <a href="#">
                                         <div class="media d-flex">
                                             <span class="avatar avatar-sm">
                                                 <img class="avatar-img rounded-circle" alt
@@ -163,7 +163,7 @@
                                     </a>
                                 </li>
                                 <li class="notification-message">
-                                    <a href="profile.html">
+                                    <a href="#">
                                         <div class="media d-flex">
                                             <div class="avatar avatar-sm">
                                                 <span class="avatar-title rounded-circle bg-info-light"><i
@@ -196,13 +196,13 @@
                 <li class="nav-item dropdown">
                     <a href="javascript:void(0)" class="user-link nav-link" data-bs-toggle="dropdown">
                         <span class="user-img">
-                            <img src="{{ asset('assets/img/profiles/avatar-07.jpg') }}" alt="img"
+                            <img src="{{ asset('assets/img/logo-small.svg') }}" alt="img"
                                 class="profilesidebar" />
-                            <span class="animate-circle"></span>
+                            {{-- <span class="animate-circle"></span> --}}
                         </span>
                         <span class="user-content">
                             <span class="user-details">Admin</span>
-                            <span class="user-name">John Smith</span>
+                            <span class="user-name">Shelvi Finance</span>
                         </span>
                     </a>
                     <div class="dropdown-menu menu-drop-user">
@@ -210,17 +210,15 @@
                             <div class="subscription-menu">
                                 <ul>
                                     <li>
-                                        <a class="dropdown-item" href="profile.html">Profile</a>
+                                        <a class="dropdown-item" href="#">Profile</a>
                                     </li>
-                                    <li>
-                                        <a class="dropdown-item" href="settings.html">Settings</a>
-                                    </li>
+
                                 </ul>
                             </div>
                             <div class="subscription-logout">
                                 <ul>
                                     <li class="pb-0">
-                                        <a class="dropdown-item" href="login.html">Log Out</a>
+                                        <a class="dropdown-item" href="{{ url('/') }}">Log Out</a>
                                     </li>
                                 </ul>
                             </div>

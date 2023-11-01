@@ -139,7 +139,7 @@
     }
   });
   if ($(".select").length > 0) {
-    $(".select").select2({ minimumResultsForSearch: -1, width: "100%" });
+    $(".select").select2({ width: "100%" });
   }
   if ($(".datetimepicker").length > 0) {
     $(".datetimepicker").datetimepicker({
@@ -568,7 +568,7 @@
   //     '<div class="col-xl-6 col-sm-6 col-12">' +
   //     '<div class="sidebar-logo">' +
   //     '<a href="index.html" class="logo">' +
-  //     '<img src="assets/img/logo.png" alt="Logo" class="img-flex">' +
+  //     '<img src="assets/img/logo.svg" alt="Logo" class="img-flex">' +
   //     "</a>" +
   //     "</div>" +
   //     "</div>" +
@@ -687,7 +687,7 @@
   //     '<div class="col-xl-6 col-sm-6 col-12">' +
   //     '<div class="sidebar-logo">' +
   //     '<a href="index.html" class="logo">' +
-  //     '<img src="assets/img/logo.png" alt="Logo" class="img-flex">' +
+  //     '<img src="assets/img/logo.svg" alt="Logo" class="img-flex">' +
   //     "</a>" +
   //     "</div>" +
   //     "</div>" +
@@ -1193,3 +1193,6 @@ if (localStorageValue === "index-five.html") {
 } else {
   targetDiv5.classList.remove(classToToggle);
 }
+
+
+// $("#user_list").select2({ twig: true });

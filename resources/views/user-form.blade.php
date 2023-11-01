@@ -2,98 +2,121 @@
 @section('main-container')
     <div class="page-wrapper">
         <div class="content container-fluid">
-
+            <div class="card">
+                <div class="rounded  p-3">
+                    <ol class="breadcrumb breadcrumb-dot text-muted mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item text-muted">
+                            <a href="#" class="text-muted">Form</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
             <div class="row">
 
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title mb-0">Application Form</h4>
+                            <h4 class="card-title mb-0">Loan Application Form</h4>
                         </div>
                         <div class="card-body">
                             <div class="wizard">
-                                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                                    <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Basic Details
-                                ">
-                                        <a class="nav-link active rounded-circle mx-auto d-flex align-items-center justify-content-center"
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Customer Info">
+                                        <a class="nav-link active d-flex align-items-center justify-content-center"
                                             href="#step1" id="step1-tab" data-bs-toggle="tab" role="tab"
                                             aria-controls="step1" aria-selected="true">
-                                            <i class="far fa-user"></i>
+                                            <i class="far fa-user-circle"></i> Customer Info
                                         </a>
                                     </li>
-                                    <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="EMI Calc">
-                                        <a class="nav-link rounded-circle mx-auto d-flex align-items-center justify-content-center"
-                                            href="#step2" id="step2-tab" data-bs-toggle="tab" role="tab"
-                                            aria-controls="step2" aria-selected="false">
-                                            <i class="fas fa-map-pin"></i>
+                                    <li class="nav-item " role="presentation" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Borrower Info">
+                                        <a class="nav-link  d-flex align-items-center justify-content-center" href="#step2"
+                                            id="step2-tab" data-bs-toggle="tab" role="tab" aria-controls="step2"
+                                            aria-selected="false">
+                                            <i class="far fa-dollar-sign"></i> Borrower Info
                                         </a>
                                     </li>
-                                    <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Bank Details">
-                                        <a class="nav-link rounded-circle mx-auto d-flex align-items-center justify-content-center"
-                                            href="#step3" id="step3-tab" data-bs-toggle="tab" role="tab"
-                                            aria-controls="step3" aria-selected="false">
-                                            <i class="fas fa-credit-card"></i>
+                                    <li class="nav-item " role="presentation" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Vehicle Details">
+                                        <a class="nav-link  d-flex align-items-center justify-content-center" href="#step3"
+                                            id="step3-tab" data-bs-toggle="tab" role="tab" aria-controls="step3"
+                                            aria-selected="false">
+                                            <i class="fa fa-car"></i> Vehicle Details
                                         </a>
                                     </li>
+                                    <li class="nav-item " role="presentation" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Loan Details">
+                                        <a class="nav-link  d-flex align-items-center justify-content-center" href="#step4"
+                                            id="step4-tab" data-bs-toggle="tab" role="tab" aria-controls="step4"
+                                            aria-selected="false">
+                                            <i class="fa fa-file"></i> Loan Details
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item " role="presentation" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Customer Bank Details">
+                                        <a class="nav-link  d-flex align-items-center justify-content-center" href="#step5"
+                                            id="step5-tab" data-bs-toggle="tab" role="tab" aria-controls="step5"
+                                            aria-selected="false">
+                                            <i class="fa fa-university"></i> Customer Bank Details
+                                        </a>
+                                    </li>
+
+                                    <!-- <li class="nav-item " role="presentation" data-bs-toggle="tooltip" data-bs-placement="top" title="Registration Form">
+                                                            <a class="nav-link  d-flex align-items-center justify-content-center" href="#step6" id="step6-tab" data-bs-toggle="tab" role="tab" aria-controls="step6"
+                                                                aria-selected="false">
+                                                                Registration Form
+                                                            </a>
+                                                        </li> -->
+
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" role="tabpanel" id="step1"
                                         aria-labelledby="step1-tab">
-                                        <div class="mb-4">
-                                            <h5>Enter Your Basic Details</h5>
-                                        </div>
+
                                         <form>
                                             <div class="row">
-                                                <div class="col-lg-4 col-12">
+                                                <div class="col-lg-12">
+                                                    <div class="form-title">
+                                                        <h5>Customer Info</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
                                                     <div class="form-group">
                                                         <label>First Name</label>
                                                         <input type="text" class="form-control"
                                                             placeholder="Enter First Name">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 col-12">
+
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
                                                     <div class="form-group">
                                                         <label>Last Name</label>
                                                         <input type="text" class="form-control"
                                                             placeholder="Enter Last Name">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 col-12">
+
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
                                                     <div class="form-group">
                                                         <label>Email</label>
-                                                        <input type="text" class="form-control"
+                                                        <input type="email" class="form-control"
                                                             placeholder="Enter Email Address">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 col-12">
+
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
                                                     <div class="form-group">
-                                                        <label>Mobile Number</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Mobile Number">
+                                                        <label>Mobile No</label>
+                                                        <input type="number" class="form-control"
+                                                            placeholder="Enter Mobile No">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 col-12">
-                                                    <div class="form-group mb-0">
-                                                        <label>Gender</label>
-                                                        <select class="select">
-                                                            <option>Select Gender</option>
-                                                            <option>Male</option>
-                                                            <option>Female</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-12">
-                                                    <div class="form-group">
-                                                        <label>Date of Birth</label>
-                                                        <div class="cal-icon cal-icon-info">
-                                                            <input type="text" class="datetimepicker form-control"
-                                                                placeholder="Select Date">
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                                 <div class="col-lg-12">
                                                     <div class="form-title">
                                                         <h5>Address Information</h5>
@@ -102,44 +125,86 @@
                                                 <div class="col-lg-12">
                                                     <div class="form-group">
                                                         <label>Address</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter your Address">
+                                                        <textarea type="text" class="form-control" placeholder="Enter your Address"></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3 col-12">
-                                                    <div class="form-group">
+
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="form-group mb-3">
                                                         <label>Country</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter your Country">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-12">
-                                                    <div class="form-group">
-                                                        <label>State</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter your State">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-12">
-                                                    <div class="form-group">
-                                                        <label>City</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter your City">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-12">
-                                                    <div class="form-group">
-                                                        <label>Postal Code</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Your Postal Code">
+                                                        <select class="select">
+                                                            <option>Select Country</option>
+                                                            <option>Options 1</option>
+                                                            <option>Options 2</option>
+                                                            <option>Options 3</option>
+                                                            <option>Options 4</option>
+                                                        </select>
                                                     </div>
                                                 </div>
 
-                                            </div>
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="flex_row">
+                                                        <div class="form-group mb-3">
+                                                            <label>State</label>
+                                                            <select class="select">
+                                                                <option>Select State</option>
+                                                                <option>Options 1</option>
+                                                                <option>Options 2</option>
+                                                                <option>Options 3</option>
+                                                                <option>Options 4</option>
+                                                            </select>
+                                                        </div>
+                                                        <a class="btn btn-success form-plus-btn" href="#"
+                                                            data-bs-toggle="modal" data-bs-target="#add_state">
+                                                            <i class="fe fe-plus-circle"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
 
-                                            <div class="row">
-                                                <div class="mb-4">
-                                                    <h5>Upload Required Documents</h5>
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="flex_row">
+                                                        <div class="form-group mb-3">
+                                                            <label>City</label>
+                                                            <select class="select">
+                                                                <option>Select City</option>
+                                                                <option>Options 1</option>
+                                                                <option>Options 2</option>
+                                                                <option>Options 3</option>
+                                                                <option>Options 4</option>
+                                                            </select>
+                                                        </div>
+                                                        <a class="btn btn-secondary form-plus-btn" href="#"
+                                                            data-bs-toggle="modal" data-bs-target="#add_city">
+                                                            <i class="fe fe-plus-circle"></i>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="flex_row">
+                                                        <div class="form-group mb-3">
+                                                            <label>Village</label>
+                                                            <select class="select">
+                                                                <option>Select Village</option>
+                                                                <option>Options 1</option>
+                                                                <option>Options 2</option>
+                                                                <option>Options 3</option>
+                                                                <option>Options 4</option>
+                                                            </select>
+                                                        </div>
+                                                        <a class="btn btn-primary form-plus-btn" href="#"
+                                                            data-bs-toggle="modal" data-bs-target="#add_village">
+                                                            <i class="fe fe-plus-circle"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Alternate Mobile No</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Mobile Number">
+                                                    </div>
                                                 </div>
                                                 <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                                     <div class="form-group">
@@ -159,6 +224,143 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                            </div>
+
+                                        </form>
+                                        <div class="d-flex">
+                                            <a class="btn btn btn-primary next">Next</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" role="tabpanel" id="step2"
+                                        aria-labelledby="step2-tab">
+                                        <div class="mb-4">
+                                            <h5>Borrower Info</h5>
+                                        </div>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="basicpill-pancard-input" class="form-label">Finance
+                                                            Name</label>
+                                                        <input type="text" class="form-control"
+                                                            id="basicpill-pancard-input" placeholder="Enter Finance Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="basicpill-vatno-input" class="form-label">Finance
+                                                            Address</label>
+                                                        <input type="text" class="form-control"
+                                                            id="basicpill-vatno-input"
+                                                            placeholder="Enter Finance Address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Finance Contact No.</label>
+                                                        <input type="number" class="form-control"
+                                                            placeholder="Enter Finance Contact No">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                        <div class="d-flex">
+                                            <a class="btn btn btn-primary previous me-2"> Back</a>
+                                            <a class="btn btn btn-primary next">Continue</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" role="tabpanel" id="step3"
+                                        aria-labelledby="step3-tab">
+                                        <div class="mb-4">
+                                            <h5>Vehicle Details</h5>
+                                        </div>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Vehicle Type</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Vehicle Type">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Vehicle Registration Number</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Vehicle Registration Number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Registration Year</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Registration Year">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Chasis Number </label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Chasis Number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="form-group mb-3">
+                                                        <label>Owners</label>
+                                                        <select class="select">
+                                                            <option>1st Owner</option>
+                                                            <option>2nd Owner</option>
+                                                            <option>3rd Owner</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Fuel Type</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Fuel Type">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Insurance Name</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Insurance Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="mb-4">
+                                                    <h5>Upload Required Documents</h5>
+                                                </div>
+                                                {{-- <div class="col-xl-4 col-lg-4 col-md-4 col-12">
+                                                    <div class="form-group">
+                                                        <label>Aadhar Card</label>
+                                                        <div class="form-group service-upload logo-upload mb-0">
+                                                            <span><img src="assets/img/icons/img-drop.svg"
+                                                                    alt="upload"></span>
+                                                            <div class="drag-drop">
+                                                                <h6 class="drop-browse align-center">
+                                                                    <span class="text-info me-1">Click to Replace </span>
+                                                                    or Drag and Drop
+                                                                </h6>
+                                                                <p class="text-muted">SVG, PNG, JPG (Max 800*400px)</p>
+                                                                <input type="file" multiple id="image_sign">
+                                                                <div id="frames"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> --}}
 
                                                 <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                                     <div class="form-group">
@@ -200,13 +402,15 @@
                                             </div>
                                         </form>
                                         <div class="d-flex">
-                                            <a class="btn btn btn-primary next">Next</a>
+                                            <a class="btn btn btn-primary previous me-2"> Back</a>
+                                            <a class="btn btn btn-primary next">Continue</a>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" role="tabpanel" id="step2"
-                                        aria-labelledby="step2-tab">
+
+                                    <div class="tab-pane fade" role="tabpanel" id="step4"
+                                        aria-labelledby="step4-tab">
                                         <div class="mb-4">
-                                            <h5>Loan EMI Calculator</h5>
+                                            <h5>Loan Details</h5>
                                         </div>
                                         <form>
                                             <div class="row">
@@ -215,48 +419,39 @@
                                                         <label for="basicpill-pancard-input" class="form-label">Loan
                                                             Amount</label>
                                                         <input type="number" class="form-control"
-                                                            id="basicpill-pancard-input" placeholder="Enter Loan Amount">
+                                                            placeholder="Enter Loan Amount">
                                                     </div>
                                                 </div>
+
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
-                                                        <label for="basicpill-vatno-input" class="form-label">Loan
-                                                            Years</label>
-                                                        <input type="number" class="form-control"
-                                                            id="basicpill-vatno-input" placeholder="Enter Loan Years">
+                                                        <label>ROI</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter ROI">
                                                     </div>
                                                 </div>
+
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
-                                                        <label for="basicpill-cstno-input" class="form-label">Interest
-                                                            Rate</label>
-                                                        <input type="number" class="form-control"
-                                                            id="basicpill-cstno-input" placeholder="Enter Interest Rate">
+                                                        <label>EMI</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter EMI">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
+
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
-                                                        <label for="basicpill-cstno-input" class="form-label">Monthly
-                                                            EMI</label>
-                                                        <input type="number" class="form-control"
-                                                            id="basicpill-cstno-input" placeholder="Enter Monthly EMI">
+                                                        <label>Chasis Number </label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Chasis Number">
                                                     </div>
                                                 </div>
+
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
-                                                        <label for="basicpill-cstno-input" class="form-label">Total
-                                                            Interest</label>
-                                                        <input type="number" class="form-control"
-                                                            id="basicpill-cstno-input" placeholder="Enter Total">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <div class="form-group">
-                                                        <label for="basicpill-cstno-input" class="form-label">Total Amount
-                                                            Payable</label><input type="text" class="form-control"
-                                                            id="basicpill-cstno-input" placeholder="Total Amount Payable">
+                                                        <label>Tenure of loan</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Tenure of loan">
                                                     </div>
                                                 </div>
 
@@ -267,59 +462,47 @@
                                             <a class="btn btn btn-primary next">Continue</a>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" role="tabpanel" id="step3"
-                                        aria-labelledby="step3-tab">
+
+                                    <div class="tab-pane fade" role="tabpanel" id="step5"
+                                        aria-labelledby="step5-tab">
                                         <div class="mb-4">
-                                            <h5>Payment Details</h5>
+                                            <h5> Bank Details</h5>
                                         </div>
                                         <form>
                                             <div class="row">
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-4 col-md-12 col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="basicpill-namecard-input" class="form-label">Name on
-                                                            Card</label>
+                                                        <label>Account Holder Name</label>
                                                         <input type="text" class="form-control"
-                                                            id="basicpill-namecard-input">
+                                                            placeholder="Enter Account Holder Name">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-4 col-md-12 col-sm-12">
                                                     <div class="form-group">
-                                                        <label>Credit Card Type</label>
-                                                        <select class="form-select">
-                                                            <option selected>Select Card Type</option>
-                                                            <option value="AE">American Express</option>
-                                                            <option value="VI">Visa</option>
-                                                            <option value="MC">MasterCard</option>
-                                                            <option value="DI">Discover</option>
-                                                        </select>
+                                                        <label>Account Number</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Account Number">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="basicpill-cardno-input" class="form-label">Credit Card
-                                                            Number</label>
+                                                        <label>Bank Name</label>
                                                         <input type="text" class="form-control"
-                                                            id="basicpill-cardno-input">
+                                                            placeholder="Enter Bank Name">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="basicpill-card-verification-input"
-                                                            class="form-label">Card Verification Number</label>
+                                                        <label>Branch</label>
                                                         <input type="text" class="form-control"
-                                                            id="basicpill-card-verification-input">
+                                                            placeholder="Enter Branch Name">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-4 col-md-12 col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="basicpill-expiration-input"
-                                                            class="form-label">Expiration Date</label>
+                                                        <label>IFSC</label>
                                                         <input type="text" class="form-control"
-                                                            id="basicpill-expiration-input">
+                                                            placeholder="Enter IFSC Code">
                                                     </div>
                                                 </div>
                                             </div>
@@ -334,6 +517,124 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="modal custom-modal fade" id="save_modal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form-header">
+                        <h3>Confirm Save Changes</h3>
+                        <p>Are you sure want to Confirm Save Changes?</p>
+                    </div>
+                    <div class="modal-btn delete-action">
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="reset" data-bs-dismiss="modal"
+                                    class="w-100 btn btn-primary paid-continue-btn" id="type-success">Save
+                                    Changes</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" data-bs-dismiss="modal"
+                                    class="w-100 btn btn-primary paid-cancel-btn" id="type-error">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal custom-modal fade" id="add_state" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <div class="form-header modal-header-title text-start mb-0">
+                        <h4 class="mb-0">Add New State</h4>
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="align-center" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group mb-0">
+                                <label>State <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter State Name">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-bs-dismiss="modal" class="btn btn-danger me-2">Cancel</a>
+                    <a href="#" data-bs-dismiss="modal" class="btn btn-primary" id="type-info">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal custom-modal fade" id="add_city" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <div class="form-header modal-header-title text-start mb-0">
+                        <h4 class="mb-0">Add New City</h4>
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="align-center" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group mb-0">
+                                <label>City <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter City Name">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-bs-dismiss="modal" class="btn btn-danger me-2">Cancel</a>
+                    <a href="#" data-bs-dismiss="modal" class="btn btn-primary">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal custom-modal fade" id="add_village" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <div class="form-header modal-header-title text-start mb-0">
+                        <h4 class="mb-0">Add New Village</h4>
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="align-center" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group mb-0">
+                                <label>Village <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Village Name">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-bs-dismiss="modal" class="btn btn-danger me-2">Cancel</a>
+                    <a href="#" data-bs-dismiss="modal" class="btn btn-primary">Save</a>
                 </div>
             </div>
         </div>
