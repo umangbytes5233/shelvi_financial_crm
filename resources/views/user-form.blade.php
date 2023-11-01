@@ -67,11 +67,11 @@
                                     </li>
 
                                     <!-- <li class="nav-item " role="presentation" data-bs-toggle="tooltip" data-bs-placement="top" title="Registration Form">
-                                                            <a class="nav-link  d-flex align-items-center justify-content-center" href="#step6" id="step6-tab" data-bs-toggle="tab" role="tab" aria-controls="step6"
-                                                                aria-selected="false">
-                                                                Registration Form
-                                                            </a>
-                                                        </li> -->
+                                                                                                                <a class="nav-link  d-flex align-items-center justify-content-center" href="#step6" id="step6-tab" data-bs-toggle="tab" role="tab" aria-controls="step6"
+                                                                                                                    aria-selected="false">
+                                                                                                                    Registration Form
+                                                                                                                </a>
+                                                                                                            </li> -->
 
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
@@ -259,9 +259,16 @@
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
-                                                        <label class="form-label">Finance Contact No.</label>
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Enter Finance Contact No">
+                                                        <label class="form-label">Executive name.</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Executive Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Dealer name.</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Dealer Name">
                                                     </div>
                                                 </div>
                                             </div>
@@ -312,14 +319,11 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-4 col-12">
-                                                    <div class="form-group mb-3">
-                                                        <label>Owners</label>
-                                                        <select class="select">
-                                                            <option>1st Owner</option>
-                                                            <option>2nd Owner</option>
-                                                            <option>3rd Owner</option>
-                                                        </select>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Engine Number </label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Engine Number">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
@@ -436,14 +440,6 @@
                                                         <label>EMI</label>
                                                         <input type="text" class="form-control"
                                                             placeholder="Enter EMI">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-4">
-                                                    <div class="form-group">
-                                                        <label>Chasis Number </label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Chasis Number">
                                                     </div>
                                                 </div>
 
