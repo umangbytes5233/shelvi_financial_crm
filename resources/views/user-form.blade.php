@@ -228,7 +228,7 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label for="basicpill-vatno-input" class="form-label">Finance Address</label>
-                                                    <textarea  class="form-control"  placeholder="Enter Finance Address"></textarea>
+                                                    <textarea class="form-control" placeholder="Enter Finance Address"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
@@ -374,8 +374,13 @@
                                 </div>
 
                                 <div class="tab-pane fade" role="tabpanel" id="step4" aria-labelledby="step4-tab">
-                                    <div class="mb-4">
+                                    <div class="mb-2 d-flex justify-content-between align-items-center">
                                         <h5>Loan Details</h5>
+
+                                        <div class="d-flex">
+                                            <a href="#" class="image_icons me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="WhatsApp"> <img src="{{ asset('assets/img/whatsapp.svg') }}" /> </a>
+                                            <a href="#"  class="image_icons" data-bs-toggle="tooltip" data-bs-placement="top" title="PDF"  ><img data-fancybox src="{{ asset('assets/img/pdf.svg') }}" /> </a>
+                                        </div>
                                     </div>
                                     <form>
                                         <div class="card table-card">
@@ -408,17 +413,17 @@
                                                                             <td><input type="text" class="form-control " value="$57.00"></td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <th>Road Side Assite  </th>
+                                                                            <th>Road Side Assite </th>
                                                                             <th>:</th>
                                                                             <td><input type="text" class="form-control " value="$88.00"></td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <th>RTO  </th>
+                                                                            <th>RTO </th>
                                                                             <th>:</th>
                                                                             <td><input type="text" class="form-control " value="$44.00"></td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <th>Hold for Insurance & Taxi to PVT  </th>
+                                                                            <th>Hold for Insurance & Taxi to PVT </th>
                                                                             <th>:</th>
                                                                             <td><input type="text" class="form-control " value="$66.00"></td>
                                                                         </tr>
@@ -447,10 +452,7 @@
                                             <a class="btn btn-primary previous me-2"> Back</a>
                                             <a class="btn btn-primary next">Continue</a>
                                         </div>
-                                        <div class="d-flex">
-                                            <a href="#" class="image_icons me-2"> <img src="{{ asset('assets/img/whatsapp.svg') }}" /> </a>
-                                            <a href="#" class="image_icons"><img src="{{ asset('assets/img/pdf.svg') }}" /> </a>
-                                        </div>
+
                                     </div>
                                 </div>
 
